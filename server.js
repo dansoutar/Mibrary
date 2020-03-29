@@ -24,7 +24,7 @@ app.use('/', indexRouter);
 
 //DATABASE CONNECTION
 const mongoose = require('mongoose');
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true,
+mongoose.connect('process.env.DATABASE_URL', { useNewUrlParser: true,
 useUnifiedTopology: true }
  );
 
