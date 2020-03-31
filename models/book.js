@@ -1,10 +1,5 @@
 // IMPORTS
 const mongoose = require('mongoose');
-const path = require('path');
-
-
-// Path to where cover images are stored
-const coverImageBasePath = 'uploads/bookCovers';
 
 
 // MODEL SCHEMA
@@ -29,7 +24,11 @@ const bookSchema = new mongoose.Schema({
         required: true,
         default: Date.now
     },
-    coverImageName: {
+    coverImage: {
+        type: Buffer,
+        required: true
+    },
+    coverImageType: {
         type: String,
         required: true
     },
@@ -44,11 +43,11 @@ const bookSchema = new mongoose.Schema({
 //virtual property add
 bookSchema.virtual('coverImagePath').get( function() {
 
-    if (this.coverImageName != null) {
-        return path.join('/', coverImageBasePath, this.coverImageName);  
+    if (this.coverImage != null && this.coverImageType != null) {   
+        return `data:${this.coverImageType};charset=UF-8;base64,${this.coverImage.toString('base64')}`;  
     }
 });
 
 module.exports = mongoose.model('Book', bookSchema);
-module.exports.coverImageBasePath = coverImageBasePath;
+
 
