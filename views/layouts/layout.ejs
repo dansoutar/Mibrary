@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- my styles -->
-    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/buttons.css">
+
+    <!-- font styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- file pond -->
     <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
@@ -23,13 +28,14 @@
     <title>Mibrary</title>
 </head>
 <body>
-
-    <%- include('../partials/header.ejs') %>
-    <%- include('../partials/error-message.ejs') %>
-    <%- body %>
-    <br>
-    <div class="">After</div>
-    <br>
+    <div class="container">
+        <%- include('../partials/header.ejs') %>
+        <div class="inner-container">
+            <%- include('../partials/error-message.ejs') %>
+            <%- body %>  
+        </div>
+    </div>
+    
 
 </body>
 </html>

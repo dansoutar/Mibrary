@@ -1,0 +1,26 @@
+header nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 4.0rem;
+}
+.nav-links li a:hover {
+    color: var(--color-link-hover);
+}
+
+.logo {
+    position: relative;
+    top: 2vh;
+}
+.logo div a {
+    max-width: 100%;
+}

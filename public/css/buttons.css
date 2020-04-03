@@ -1,0 +1,42 @@
+.btn {
+    border-radius: .5rem;
+    padding: 1rem 3.2rem;
+    font-size: 1.6rem;
+    font-family: var(--font-fam);
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--color--primary);
+    color: var(--color-button-text--light);
+}
+.btn-primary:hover {
+    background-color: var(--color--primary-hover);
+}
+
+.btn-secondary {
+    background-color: var(--color--secondary);
+    color: var(--color-button-text--light);
+}
+.btn-secondary:hover {
+    background-color: var(--color--secondary-hover);
+}
+
+.btn-danger {
+    background-color: var(--color--red);
+    color: var(--color-button-text--light);
+}
+.btn-danger:hover {
+    background-color: var(--color--red-hover);
+}
+
+.btn-row {
+    display: flex;
+}
+.btn-row > * {
+    margin: 0 0 0 .8rem;
+}
+.btn-row > *:first-child {
+    margin: 0 0 0 0rem;
+}
