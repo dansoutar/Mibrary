@@ -33,8 +33,11 @@
     --font-size-heading: 4rem;
     --font-size-title: 2.4rem;
     --font-size-text: 1.6rem;
-    
     --font-form-label-font-size: 1.6rem;
+
+    --book-cover-width: 200px;
+    --book-cover-width-large: 325px;
+    --book-cover-aspect-ratio: .75;
 
     --transition: all .2s cubic-bezier(.5, 0 , .5, 1);
 }
@@ -67,7 +70,7 @@
 h2 {
   font-size: var(--font-size-heading);
   font-weight: var(--font-bold);
-  margin: 0 0 3.2rem 0;
+  margin: 3.2rem 0 3.2rem 0;
 }
   
   ol, ul {
@@ -103,3 +106,6 @@ h2 {
     margin: 8rem 2rem;
   }
 
+.error-message {
+  color: var(--color--red);
+}
