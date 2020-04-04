@@ -82,7 +82,6 @@ router.get('/:id', async (req, res)=>{
             author: author,
             booksByAuthor: books
         });
-        console.log(books);
     }
     catch {
         res.redirect('/');
@@ -99,7 +98,6 @@ router.put('/:id', async (req, res)=>{
         await author.save();
         res.redirect(`/authors/${author.id}`);
     } catch (e) {
-        console.log(e);
         if (author == null) { 
             res.redirect('/');
         } else {

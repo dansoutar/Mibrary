@@ -1,3 +1,14 @@
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
 .btn {
     border-radius: .5rem;
     padding: 1rem 3.2rem;
@@ -5,6 +16,7 @@
     font-family: var(--font-fam);
     cursor: pointer;
     text-align: center;
+    transition: all .2s cubic-bezier(.5, 0 , .5, 1);
 }
 
 .btn-primary {
@@ -39,4 +51,10 @@
 }
 .btn-row > *:first-child {
     margin: 0 0 0 0rem;
+}
+
+
+.btn-search {
+    margin-top: .8rem;
+    width: 100%;
 }

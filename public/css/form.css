@@ -1,0 +1,68 @@
+
+.form-row {
+    display: flex;
+    margin-bottom: 1.6rem;
+}
+
+.form-row-end {
+    justify-content: flex-end;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.6rem;
+    flex: 1 0 0;
+}
+
+.form-item:first-child {
+    margin-left: 0;
+}
+
+.flex-item-no-grow {
+    flex-grow: 0;
+}
+
+.form-item > label {
+    font-size: var(--font-form-label-font-size);
+    margin-bottom: .8rem;
+}
+
+.form-item input, .form-item select, .form-item textarea {
+    height: 4rem;
+    padding: 1.6rem 1.2rem;
+    border-radius: .5rem;
+    border: 1px solid var(--color-form-input--border);
+    background-color: var(--color-form-input--bg);
+    font-weight: var(--font-light);
+    font-size: 1.6rem;
+    font-family: var(--font-fam);
+
+    transition: var(--transition);
+    outline: none;
+}
+
+.form-item input:focus, .form-item select:focus, .form-item textarea:focus {
+    border-color:  var(--color-form-input--border-focus);
+    border-width: .118rem;
+}
+
+.form-item textarea {
+    height: 100%;
+    resize: none;
+    padding: 1.4rem 1.4rem;
+}
+
+.filepond--root {
+    font-family: var(--font-fam) !important;
+    margin-bottom: 0 !important;
+}
+.filepond--panel-root {
+    background-color: var(--color-form-input--bg) !important;
+    border: 1px solid var(--color-form-input--border) !important;
+    background-color: var(--color-form-input--bg) !important;
+}
+.filepond--panel-root {
+    color: var(--color-text) !important;
+    font-size: inherit;
+}

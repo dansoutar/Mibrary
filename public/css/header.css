@@ -11,8 +11,11 @@ header nav {
 }
 
 .nav-links li {
-    margin-left: 4.0rem;
+    margin-left: 4.0rem;  
 }
+.nav-links li a {
+    transition: all .2s cubic-bezier(.5, 0 , .5, 1);
+ }
 .nav-links li a:hover {
     color: var(--color-link-hover);
 }
@@ -22,5 +25,5 @@ header nav {
     top: 2vh;
 }
 .logo div a {
-    max-width: 100%;
+    max-width: 100%; 
 }
